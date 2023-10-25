@@ -1,98 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <header>
-        <img src="https://robohash.org/andrea" alt="logo1">
-        <img src="./images/logo.jpg" alt="logo2">
-
-
-
-        <div class="navBar">
-            <a href="#">Home</a>
-            <a href="#">Chi siamo</a>
-            <a href="#">Contatti</a>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercitazione</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img class="image1" src="./images/logo.png" alt="logo2" />
+      <nav class="navbar">
+        <li class="link-home">Home</li>
+        <section class="left">
+          <li class="link">About</li>
+          <li class="link">Contacts</li>
+        </section>
+      </nav>
     </header>
-    <hr>
     <main>
-        <h1>Compila il Form</h1>
-        <h2>Pagina aggiornata3</h2>
-        <form name="Dati utente" action="" method="post">
-            <fieldset class="form1">
-                <legend> Dati anagrafici</legend>
-                <label>Nome <input type="text"></label>
-                <br>
-                <label>Cognome <input type="text"></label>
-                <br>
-                <label>Data di nascita <input type="date"></label>
-                <br>
-                <label>Indirizzo di Residenza <input type="text"></label>
+      <form class="module">
+        <div>
+          <label for="name">Nome: </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Il tuo nome"
+            required
+          />
 
-            </fieldset>
-            <fieldset class="form1">
-                <legend> Formazione</legend>
-                <label>Livello di Istruzione <select name="Istruzione" id="Istruzione">
-                        <option value="Diploma">Diploma</option>
-                        <option value="Laurea Triennale">Laurea Triennale</option>
-                        <option value="Laurea Magistrale">Laurea Magistrale</option>
-                        <option value="Master I Livello">Master I Livello</option>
-                        <option value="Master II Livello">Master II Livello</option>
-                        <option value="Dottorato di Ricerca">Dottorato di Ricerca</option>
-                    </select></label>
-                <br>
-                <label>Data conseguimento titolo <input type="text"></label>
-                <br>
-                <label>Nome Università/Istituo che ha rilasciato il titolo <input type="text"></label>
-            </fieldset>
-            <button type="submit">Invia</button>
-        </form>
+          <label for="surname">Cognome: </label>
+          <input
+            type="text"
+            id="surname"
+            name="surname"
+            placeholder="Il tuo cognome"
+            required
+          />
+        </div>
+        <div>
+          <label for="email">Email: </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="La tua mail"
+            required
+          />
+          <label for="password">Password: </label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="La tua password"
+            required
+          />
+        </div>
+        <button class="submit-btn" type="submit">Invia</button>
+        <!-- <button type="submit" value="Invia"></button>
+<input type="submit" value="Invia"> -->
+      </form>
     </main>
-    <hr>
-    <footer>
-        <table>
-            <tr>
-                <td class="siteInfo">
-                    <ul>
-                        <li>
-                            <a href="">Legal info</a>
-                        </li>
-                        <li>
-                            <a href="">Condizioni d'uso del sito</a>
-                        </li>
-                        <li>
-                            <a href="">Privacy policy</a>
-                        </li>
-
-                    </ul>
-                </td>
-                <td class="social">
-                    <ul>
-                        <li>
-                            <a href="">Facebook</a>
-                        </li>
-                        <li>
-                            <a href="">Istagram</a>
-                        <li>
-                            <a href="">LinkedIn</a>
-                        </li>
-                        <li>
-                            <a href="">TikTok</a>
-                        </li>
-                </td>
-            </tr>
-
-        </table>
-
-
-
+    <footer class="footer">
+      <ul class="list">
+        <li class="link">Contacts</li>
+        <li class="link">Instagram</li>
+        <li class="link">Facebook</li>
+        <li class="link">TikTok</li>
+      </ul>
+      <p class="rights">All rights reserved. Created by threeSchoolGroup</p>
     </footer>
-</body>
-
+  </body>
 </html>
