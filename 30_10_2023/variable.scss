@@ -1,0 +1,26 @@
+//variabili
+
+//colori
+$dark-color: #b0578d;
+$primary-color: #d988b9;
+$hover-color: #facbea;
+$light-color: #ffe4d6;
+
+//fonts
+@import url("https://fonts.googleapis.com/css2?family=Cute+Font&family=Kumar+One&family=Noto+Serif&family=Work+Sans:wght@900&display=swap");
+$primary-font: "Kumar One", serif;
+
+@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
+$secondary-font: "Koulen", sans-serif;
+
+//border radius
+$border-radius-def: 16px;
+
+//mixins
+@mixin container {
+  padding: 10px;
+  border: none;
+  background-color: $dark-color;
+  border-radius: $border-radius-def;
+  color: $light-color;
+}

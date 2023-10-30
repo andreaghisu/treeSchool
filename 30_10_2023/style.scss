@@ -1,0 +1,31 @@
+@import "./variable.scss";
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: $primary-color;
+  font-family: $primary-font;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $dark-color;
+    padding: 10px;
+    border-radius: 0 0 $border-radius-def $border-radius-def;
+    margin-bottom: 30px;
+
+    .logo {
+      background-color: $light-color;
+      border-radius: 100%;
+    }
+  }
+
+  .container {
+    @include container;
+
+    .first-container {
+    }
+  }
+}
